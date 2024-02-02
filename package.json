@@ -18,7 +18,8 @@
     "academic",
     "slidev",
     "slidev-theme",
-    "slidev-theme-academic"
+    "slidev-theme-academic",
+    "slidev-theme-academic-schober"
   ],
   "scripts": {
     "build": "node prebuild.js && slidev build example.md",
