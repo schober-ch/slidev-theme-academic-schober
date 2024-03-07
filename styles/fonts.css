@@ -34,3 +34,9 @@
     /* Modern Browsers */ url('../assets/fonts/roboto-mono-v22-latin-300.ttf') format('truetype'),
     /* Safari, Android, iOS */ url('../assets/fonts/roboto-mono-v22-latin-300.svg#RobotoMono') format('svg'); /* Legacy iOS */
 }
+
+.slidev-page {
+h2 h3 h4 h5 {
+  @apply mb-8;
+}
+}

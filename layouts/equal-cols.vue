@@ -2,7 +2,7 @@
   <div class="slidev-layout default">
     <slot name="header"/>
     <div class="flex h-stretch">
-      <div v-for="item in colNames" class="flex-1">
+      <div v-for="item in colNames" class="flex-1 mr-8 last:mr-0">
         <slot :name="item"/>
       </div>
     </div>

@@ -21,4 +21,15 @@
   table + h2 {
     @apply mt-10;
   }
+
+
+
+}
+.slidev-page {
+h2 {
+  @apply mb-4;
+}
+h3, h4, h5 {
+  @apply mt-2;
+}
 }

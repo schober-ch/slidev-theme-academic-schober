@@ -1,7 +1,7 @@
 {
   "name": "slidev-theme-academic-schober",
   "description": "Academic presentations with Slidev / personal version",
-  "version": "1.2.7",
+  "version": "1.2.8",
   "author": {
     "name": "Christoph Schober",
     "email": "christoph.schober@th-deg.de",
@@ -44,6 +44,7 @@
     "@iconify-json/mdi": "^1.1.0",
     "@release-it/conventional-changelog": "^4.2.0",
     "@slidev/cli": "^0.40.3",
+    "eslint-plugin-vue": "^9.22.0",
     "husky": "^7.0.4",
     "playwright-chromium": "^1.19.2",
     "prettier": "^2.6.2",
