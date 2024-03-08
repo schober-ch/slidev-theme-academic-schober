@@ -1,24 +1,29 @@
 <template>
   <div class="absolute p-2 text-xs" :class="classNames">
-  <template v-if="course.rlt_author">
-  {{ course.rlt_author }} | {{ course.rlt_degree }} | {{ course.rlt_course
-  }}:
-  </template>
-  <template v-else>{{ $slidev.configs.coverAuthor }}: </template>
-  {{ $slidev.configs.title }}</div>
+    <template v-if="course.rlt_author && $slidev.configs.lectureSlug !== 'overview'">
+      <!-- this is the case for deployed builds -->
+      <div class="flex items-center">
+        <a class="mr-2" href="/" alt="Home: Course Overview" title="Home: Course Overview"><img width="20px" src="theme/favicon.svg" /></a>{{ course.rlt_author }} |
+        {{ course.rlt_course }}: {{ $slidev.configs.title }}
+      </div>
+    </template>
+    <template v-else>
+      <!-- this is the case for local dev build and live-mode -->
+      {{ $slidev.configs.coverAuthor }}: {{ $slidev.configs.title }}
+    </template>
+  </div>
 </template>
 
 <script setup lang="ts">
-
-import { ref, onMounted, computed, PropType } from 'vue'
-import type { Ref } from 'vue'
+import { ref, onMounted, computed, PropType } from 'vue';
+import type { Ref } from 'vue';
 import { Course, get_json } from '../common/Course';
 
-let course: Ref<Course> = ref({})
+let course: Ref<Course> = ref({});
 
 onMounted(() => {
-  get_json(course)
-})
+  get_json(course);
+});
 
 const {
   classNames: classNamesTransferred,
