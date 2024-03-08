@@ -1,5 +1,5 @@
 <template>
-  <div class="shadow m-2 rounded">
+  <div class="shadow mt-2 mb-2 rounded">
     <div class="p-2 bg-true-gray-300 dark:bg-true-gray-700 rounded-t" :class="center ? 'text-center' : ''">
       <span class="text-2xl"><mdi-book-open-page-variant-outline class="mr-3" />{{ for }}</span>
     </div>

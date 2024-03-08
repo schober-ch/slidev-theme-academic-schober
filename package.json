@@ -64,7 +64,6 @@
         "serif": "Roboto Slab",
         "mono": "Roboto Mono"
       },
-      "hightlighter": "prism",
       "themeConfig": {
         "paginationX": "r",
         "paginationY": "t"
