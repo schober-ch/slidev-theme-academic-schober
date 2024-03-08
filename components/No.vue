@@ -1,7 +1,7 @@
 <template>
   <div class="bg-amber-100 dark:bg-amber-600 m-2 p-2 rounded shadow" :class="center ? 'text-center' : ''">
     <h3 v-if="title">{{ title }}</h3>
-    <span :class="'text-' + size"><slot /></span>
+    <span  class="no-p-margin" :class="'text-' + size"><slot /></span>
   </div>
 </template>
 

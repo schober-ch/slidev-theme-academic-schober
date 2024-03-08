@@ -33,3 +33,11 @@ h3, h4, h5 {
   @apply mb-4;
 }
 }
+
+/* Custom: Do not add p-margins to markdown text converted to <p> in custom
+ * components */
+.no-p-margin p {
+  @apply mt-0;
+  @apply mb-0;
+}
+
