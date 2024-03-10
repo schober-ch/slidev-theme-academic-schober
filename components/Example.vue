@@ -1,5 +1,5 @@
 <template>
-  <div class="shadow mt-2 mb-2 rounded">
+  <div class="shadow mt-4 mb-4 rounded">
     <div class="p-2 bg-emerald-300 dark:bg-emerald-900 rounded-t" :class="center ? 'text-center' : ''">
     <h3><mdi-hammer-wrench class="mr-3"/>Example: {{ for }}</h3>
     </div>
