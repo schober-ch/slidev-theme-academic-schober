@@ -1,6 +1,6 @@
 <template>
   <div class="slidev-layout">
-    <PDFView class="" :src="props.pdf" :page="page"></PDFView>
+    <PDFView v-if="$slidev.mypdf" :key="'pv_page_'+props.page" class="" :page="page"></PDFView>
   </div>
 </template>
 

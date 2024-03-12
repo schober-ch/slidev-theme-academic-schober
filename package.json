@@ -1,7 +1,7 @@
 {
   "name": "slidev-theme-academic-schober",
   "description": "Academic presentations with Slidev / personal version",
-  "version": "1.2.12",
+  "version": "1.2.15",
   "author": {
     "name": "Christoph Schober",
     "email": "christoph.schober@th-deg.de",
@@ -33,6 +33,7 @@
   "prettier": "@alexanderdavide/prettier-config",
   "dependencies": {
     "@slidev/types": "^0.29.2",
+    "@tato30/vue-pdf": "^1.9.5",
     "codemirror-theme-vars": "^0.1.1",
     "prism-theme-vars": "^0.2.2",
     "theme-vitesse": "^0.1.14"

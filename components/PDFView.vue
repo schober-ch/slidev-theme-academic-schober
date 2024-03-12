@@ -1,27 +1,28 @@
 <template>
-<VuePDF :key="'page_'+props.page" v-if="showPdf" fit-parent :page="props.page" :pdf="pdf"/>
+  <button @click="show=~show">Show</button>
+  <VuePDF v-if="$slidev.mypdf.pdf" :key="'page_'+props.page" fit-parent :page="props.page" :pdf="$slidev.mypdf.pdf"/>
 </template>
 
 <script setup lang="ts">
+import {ref} from 'vue'
+
 import { VuePDF, usePDF } from '@tato30/vue-pdf'
-import { ref } from 'vue'
 
-const showPdf = ref(false);
+const show = ref(false)
 
-const props = defineProps<{
+let props = defineProps<{
   src: string;
   page: number;
 }>();
 
-console.log("XXX PDFView for page " + props.page)
-let { pdf, pages, info } = usePDF(props.src)
-console.log(pdf);
-console.log(info.value);
+// const { pdf, pages, info } = usePDF('document.pdf')
 
-
-setTimeout(() => {
-  showPdf.value = true;
-  console.log("set true")
-}, 1000);
-
+//
+// onBeforeMount(() => {console.log("XXX before mount " + props.page)})
+// // created(()=> {
+// //   console.log("on created for page " + props.page)
+// //   pdf.value = usePDF(props.src)
+// // })
+//
+// onActivated(() => {console.log("XXX on activatedf " + props.page)})
 </script>
