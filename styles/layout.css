@@ -60,3 +60,13 @@ blockquote p {
     /* @apply pl-0; */
   }
 }
+
+// Stack multiple elements on top of each other
+.r-stack {
+	display: grid;
+}
+
+.r-stack > * {
+	grid-area: 1/1;
+	margin: auto;
+}
