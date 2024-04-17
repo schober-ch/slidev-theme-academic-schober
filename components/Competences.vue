@@ -19,7 +19,7 @@
 
 <script setup lang="ts">
 defineProps({
-  center: { type: Boolean },
+  center: { type: Boolean, default: false },
   animate: { type: Boolean, default: true },
 });
 </script>

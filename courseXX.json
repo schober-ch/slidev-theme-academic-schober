@@ -1,0 +1,22 @@
+{
+    "rlt_degree": "Master ...",
+    "rlt_course": "Introduction to...", 
+    "rlt_author": "Prof. Dr. Notso Clever",
+    "rlt_description": "",
+    "rlt_created_at": "2023-09-14",
+    "rlt_last_updated_at": null,
+    "lectures": [
+        {
+            "path": "about_me",
+            "name": "About Me",
+            "description": "Short introduction and background",
+            "url": "https://github.com/..."
+        },
+        {
+            "path": "technical_setup",
+            "name": "Technical Setup",
+            "description": "Technical setup required to do practical work in this course",
+            "url": "https://github.com/..."
+        }
+    ]
+}
