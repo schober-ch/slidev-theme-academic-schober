@@ -4,6 +4,7 @@
         <img class="" v-click :src="resolveAssetUrl(img)" :width="width" />
       </template>
     </div>
+      <slot/>
 </template>
 
 <script setup lang="ts">
