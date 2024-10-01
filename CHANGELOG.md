@@ -1,5 +1,37 @@
 # Changelog
 
+### [2.0.1](https://github.com/alexanderdavide/slidev-theme-academic/compare/2.0.0...2.0.1) (2024-09-09)
+
+
+### Bug Fixes
+
+* specify package engines correctly ([f5061d7](https://github.com/alexanderdavide/slidev-theme-academic/commit/f5061d7e3dc7fe4fd39b3f2c6bcc394c7e912ff9))
+
+## [2.0.0](https://github.com/alexanderdavide/slidev-theme-academic/compare/1.3.1...2.0.0) (2024-09-08)
+
+
+### ⚠ BREAKING CHANGES
+
+* migrate to UnoCSS and Shiki highlighter
+
+### Features
+
+* migrate to UnoCSS and Shiki highlighter ([3c52243](https://github.com/alexanderdavide/slidev-theme-academic/commit/3c522433ac9858167548360884182fc6e443dedd))
+
+### [1.3.1](https://github.com/alexanderdavide/slidev-theme-academic/compare/1.3.0...1.3.1) (2024-09-08)
+
+
+### Bug Fixes
+
+* load Shiki theme directly ([3e6b27a](https://github.com/alexanderdavide/slidev-theme-academic/commit/3e6b27ae354354b468e007bdb72b504604fc93e8))
+
+## [1.3.0](https://github.com/alexanderdavide/slidev-theme-academic/compare/1.2.0...1.3.0) (2024-03-23)
+
+
+### Features
+
+* remove backticks from code ([77e7c31](https://github.com/alexanderdavide/slidev-theme-academic/commit/77e7c3145377c82c50abe0b6f35d69f3b9fb90b9))
+
 ## [1.2.0](https://github.com/alexanderdavide/slidev-theme-academic/compare/1.1.4...1.2.0) (2024-01-27)
 
 

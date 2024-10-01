@@ -1,2 +1,3 @@
-import './fonts.css';
-import './main.ts';
+// inherit from base layouts, remove it to get full customizations
+import '@slidev/client/styles/layouts-base.css';
+import './layout.css';
