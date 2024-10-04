@@ -1,19 +1,33 @@
 <template>
-  <iframe src="https://javafxpert.github.io/grok-bloch/" class="w-full h-full"
-     :style="scale ? { transform: `scale(${scale})`, transformOrigin: 'top left' } : {}"
+<canvas ref="bjsCanvas" width="500" height="500" />
 
-        sandbox="allow-scripts allow-same-origin allow-presentation"
->
-  </iframe>
 </template>
 
 
+
 <script setup lang="ts">
-import { computed } from 'vue'
+import { createScene } from '../dependencies/grok-bloch/js/scene.js'
+import { ref, onMounted, computed } from 'vue'
 
 const props = defineProps<{
   scale?: number
 }>()
 
 const scaleInvertPercent = computed(() => `${(1 / (props.scale || 1)) * 100}%`)
+
+const bjsCanvas = ref(null);
+
+
+const config = {
+    devicePixelRatio: window.devicePixelRatio || 1.0,
+    fontSize: 28 * devicePixelRatio
+};
+
+
+onMounted(() => {
+      if (bjsCanvas.value) {
+        createScene(bjsCanvas.value, config);
+      }
+    });
+
 </script>

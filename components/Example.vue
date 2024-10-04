@@ -11,7 +11,7 @@
 
 <script setup lang="ts">
   defineProps<{
-  center: bool
+  center?: bool
   for: string
 }>()
 
