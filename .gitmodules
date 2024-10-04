@@ -1,3 +1,6 @@
 [submodule ".devcontainer/vscode-dev-containers"]
 	path = .devcontainer/vscode-dev-containers
 	url = git@github.com:alexanderdavide/vscode-dev-containers.git
+[submodule "grok-bloch"]
+	path = grok-bloch
+	url = /home/work/Code/grok-bloch
