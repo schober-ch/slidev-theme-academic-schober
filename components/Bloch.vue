@@ -1,12 +1,14 @@
+// TODO: Not working!
+
 <template>
-<GrokBloch />
+<GrokBloch/>
 </template>
 
 
 
 <script setup lang="ts">
 import { computed } from 'vue'
-import { GrokBloch } from "vue-grok-bloch"
+import { GrokBloch, ComponentA } from 'grok-bloch'
 
 const props = defineProps<{
   scale?: number

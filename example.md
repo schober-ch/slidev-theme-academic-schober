@@ -151,3 +151,9 @@ indexRedirectType: external
 # Lectures
 
 <Lectures/>
+
+---
+
+# Bloch Sphere
+
+<GrokBloch/>

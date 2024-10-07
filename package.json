@@ -36,10 +36,10 @@
     "@slidev/types": "^0.29.2",
     "@tato30/vue-pdf": "^1.9.5",
     "codemirror-theme-vars": "^0.1.1",
+    "grok-bloch": "file:../../vue-grok-bloch-lib",
     "prism-theme-vars": "^0.2.2",
     "theme-vitesse": "^0.1.14",
-    "unocss": "^0.62.3",
-    "vue-grok-bloch": "file:../../vue-grok-bloch"
+    "unocss": "^0.62.3"
   },
   "devDependencies": {
     "@alexanderdavide/prettier-config": "^1.0.1",
