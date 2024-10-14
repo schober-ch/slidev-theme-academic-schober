@@ -13,18 +13,23 @@ export type Course = {
   rlt_description: string;
   rlt_created_at: string;
   rlt_last_updated_at: string;
+  tags?: [];
   lectures: Lecture[];
 };
 
 export async function get_json(course: Ref<Course>): Promise<any> {
   let url = '../course.json';
-  let obj: Course = { rlt_degree: "", rlt_course: "", rlt_author: "", rlt_description: "", rlt_created_at: "", rlt_last_updated_at: "", lectures: [] };
+  let obj: Course = { rlt_degree: "", rlt_course: "", rlt_author: "", rlt_description: "", rlt_created_at: "", rlt_last_updated_at: "", lectures: [], tags: [] };
   try {
     obj = await (await fetch(url)).json();
   }
   catch (e: unknown) {
     console.log("Course json not parsed properly.");
   }
+  if (!obj.hasOwnProperty('tags')) {
+    obj.tags = [];
+  }
+
   course.value = obj;
 }
 

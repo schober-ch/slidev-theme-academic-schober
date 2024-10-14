@@ -4,7 +4,7 @@
   <div class="h-full w-full">
     <div relative :style="{ width: scaleInvertPercent, height: scaleInvertPercent }">
       <iframe
-        sandbox="allow-scripts allow-same-origin allow-presentation"
+        sandbox="allow-scripts allow-same-origin allow-presentation allow-modals allow-popups allow-top-navigation"
         allowfullscreen="true" allowtransparency="true"
         id="frame" class="mx-auto w-[90%] h-[90%] mt-10"
         :src='"https://www.mentimeter.com/app/presentation/"+ id + "/embed"'

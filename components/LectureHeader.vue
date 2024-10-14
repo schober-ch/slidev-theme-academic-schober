@@ -27,6 +27,7 @@ let course: Ref<Course> = ref({});
 onMounted(() => {
   get_json(course);
 });
+$slidev.configs.course_info = course;
 
 const {
   classNames: classNamesTransferred,
