@@ -10,7 +10,8 @@ coverBackgroundSource: unsplash
 coverBackgroundSourceUrl: >-
   https://unsplash.com/photos/CANL3bzp6wU/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8Mnx8cXVhbnR1bXxlbnwwfHx8fDE3MDcxMjEzNjJ8MA&force=true&w=2400
 fonts:
-  local: Montserrat, Roboto Mono, Roboto Slab
+  local: Montserrat, Roboto Mono, Roboto Slab # local fonts are used for legal reasons for deployment to https://slidev-theme-academic.alexeble.de and only set up for the example project, remove this line for your project to automatically have fonts imported from Google
+hideInToc: true
 themeConfig:
   paginationX: r
   paginationY: t
