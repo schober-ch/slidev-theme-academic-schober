@@ -1,5 +1,5 @@
 <template>
-  <li class="text-xs whitespace-nowrap">
+  <li class="text-xs">
     <sup v-if="number">{{ number }}</sup>
     <slot />
   </li>

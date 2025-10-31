@@ -4,14 +4,16 @@
       <span class="text-2xl"><mdi-book-open-page-variant-outline class="mr-3" />{{ for }}</span>
     </div>
     <div class="no-p-margin p-2 bg-true-gray-100 dark:bg-true-gray-600 rounded-b" :class="center ? 'text-center' : ''">
-      <slot/>
+      <slot />
+      <div v-if="source" class="text-base text-right">Source: {{ source }}</div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 defineProps<{
-  center?: bool;
   for: string;
+  center?: boolean;
+  source?: string;
 }>();
 </script>
