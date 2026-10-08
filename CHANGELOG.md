@@ -1,5 +1,13 @@
 # Changelog
 
+### [3.0.1](https://github.com/alexanderdavide/slidev-theme-academic/compare/3.0.0...3.0.1) (2026-07-26)
+
+## [3.0.0](https://github.com/alexanderdavide/slidev-theme-academic/compare/2.1.0...3.0.0) (2026-07-17)
+
+### ⚠ BREAKING CHANGES
+
+* constrain Slidev version to >=0.50.0
+
 ## [2.1.0](https://github.com/alexanderdavide/slidev-theme-academic/compare/2.0.1...2.1.0) (2024-12-26)
 
 
